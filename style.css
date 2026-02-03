@@ -414,8 +414,13 @@ header {
     text-decoration: underline;
 }
 
-.instagram-cta {
+.cta-wrapper {
     margin-top: 1rem;
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .instagram-button {
@@ -432,6 +437,25 @@ header {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     transition: none;
+}
+
+.email-button {
+    display: inline-block;
+    padding: 12px 22px;
+    background: transparent;
+    color: #285aeb;
+    text-decoration: none;
+    font-weight: 700;
+    border: 2px solid transparent;
+    background-image: linear-gradient(white, white), 
+                      radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285aeb 90%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    transition: none;
+}
+
+.email-button:hover {
+    color: #1e4bb8;
 }
 
 /* Footer */
